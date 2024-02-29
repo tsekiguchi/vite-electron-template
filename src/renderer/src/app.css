@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide horizontal scroll bar */
+body, html {
+    overflow-x: hidden;
+  }
+  
+/* Hide vertical scroll bar */
+body, html {
+overflow-y: hidden;
+}
+
+.scrollable {
+    overflow: auto;
+}
+
+  
