@@ -54,7 +54,6 @@ declare module '$env/static/private' {
 	export const rvm_prefix: string;
 	export const PATH: string;
 	export const npm_package_json: string;
-	export const npm_config_engine_strict: string;
 	export const _: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_init_module: string;
@@ -67,8 +66,10 @@ declare module '$env/static/private' {
 	export const npm_package_name: string;
 	export const LANG: string;
 	export const npm_config_npm_version: string;
+	export const npm_config_electron_builder_binaries_mirror: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const XPC_FLAGS: string;
+	export const npm_config_electron_mirror: string;
 	export const npm_config_node_gyp: string;
 	export const npm_package_version: string;
 	export const XPC_SERVICE_NAME: string;
@@ -90,7 +91,10 @@ declare module '$env/static/private' {
 	export const npm_node_execpath: string;
 	export const npm_config_prefix: string;
 	export const COLORTERM: string;
+	export const ELECTRON_CLI_ARGS: string;
+	export const NODE_ENV_ELECTRON_VITE: string;
 	export const NODE_ENV: string;
+	export const ELECTRON_MAJOR_VER: string;
 }
 
 /**
@@ -150,7 +154,6 @@ declare module '$env/dynamic/private' {
 		rvm_prefix: string;
 		PATH: string;
 		npm_package_json: string;
-		npm_config_engine_strict: string;
 		_: string;
 		npm_config_userconfig: string;
 		npm_config_init_module: string;
@@ -163,8 +166,10 @@ declare module '$env/dynamic/private' {
 		npm_package_name: string;
 		LANG: string;
 		npm_config_npm_version: string;
+		npm_config_electron_builder_binaries_mirror: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		XPC_FLAGS: string;
+		npm_config_electron_mirror: string;
 		npm_config_node_gyp: string;
 		npm_package_version: string;
 		XPC_SERVICE_NAME: string;
@@ -186,7 +191,10 @@ declare module '$env/dynamic/private' {
 		npm_node_execpath: string;
 		npm_config_prefix: string;
 		COLORTERM: string;
+		ELECTRON_CLI_ARGS: string;
+		NODE_ENV_ELECTRON_VITE: string;
 		NODE_ENV: string;
+		ELECTRON_MAJOR_VER: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
